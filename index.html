@@ -20,11 +20,13 @@
         </form>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
         <h2 ng-show="students.length && filtered.length">Student Roster</h2>
         <h2 ng-show="students.length && !filtered.length">No Matches</h2>
       </div>
+
       <div class="col-md-12">
         <ul>
           <li ng-repeat="item in filtered = (students | filter:query)">
@@ -40,6 +42,7 @@
           </li>
         </ul>
       </div>
+
       <div class="col-md-4">
         <h2>New Students</h2>
         <form ng-submit="addStudent()" class="form-inline" role="form">
